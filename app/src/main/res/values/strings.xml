@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application Java 7</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="email_address">Адрес почты</string>
+    <string name="auth">Авторизация</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="tap_to_choose_photo">Нажмите, чтобы выбрать фото:</string>
+    <string name="next">Далее</string>
+    <string name="edit_age">Укажите возраст:</string>
+    <string name="your_age">Ваш возраст</string>
+</resources>

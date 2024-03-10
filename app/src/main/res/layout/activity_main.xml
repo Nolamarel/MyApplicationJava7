@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/user_name_et"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="@string/user_name"
+        android:inputType="text|textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/user_email_et"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="text|textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/user_name_et"
+        app:layout_constraintStart_toStartOf="@+id/user_name_et"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_et" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/auth" />
+
+    <EditText
+        android:id="@+id/user_password_et"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="text|textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/user_email_et"
+        app:layout_constraintStart_toStartOf="@+id/user_email_et"
+        app:layout_constraintTop_toBottomOf="@+id/user_email_et" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onMyButtonClick"
+        android:text="@string/enter"
+        app:layout_constraintEnd_toEndOf="@+id/user_password_et"
+        app:layout_constraintStart_toStartOf="@+id/user_password_et"
+        app:layout_constraintTop_toBottomOf="@+id/user_password_et" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
